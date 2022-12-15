@@ -13,6 +13,10 @@
 
     <h1>BUSCADOR DE CEP</h1>
 
+    <img src="img/maps.svg" class="img02">
+
+    <div class="circle"></div>
+
     <div class="img01">
         <img src="img/imagem.jpg" class="img">
     </div>
@@ -26,19 +30,19 @@
             </form>
 
             <script>
-            const input = document.getElementById("campo");
+                const input = document.getElementById("campo");
 
-            input.addEventListener("keyup", formatarCep);
+                input.addEventListener("keyup", formatarCep);
 
-            function formatarCep(e){
+                function formatarCep(e) {
 
-            var v= e.target.value.replace(/\D/g,"")
+                    var v = e.target.value.replace(/\D/g, "")
 
-            v=v.replace(/^(\d{5})(\d)/,"$1-$2")
+                    v = v.replace(/^(\d{5})(\d)/, "$1-$2")
 
-            e.target.value = v;
+                    e.target.value = v;
 
-            }
+                }
             </script>
 
 
@@ -50,7 +54,7 @@
                 echo "<script>alert('CEP INVÁLIDO')</script>";
             } else {
                 $endereco = filter_input(INPUT_POST, "txtcep");
-                echo "<script>alert('CEP ENCONTRADO COM SUCESSO')</script>"; 
+                echo "<script>alert('CEP ENCONTRADO COM SUCESSO')</script>";
             }
 
 
@@ -75,6 +79,10 @@
             echo "<strong>ESTADO:</strong> $encontrar->uf";
             ?>
         </div>
+    </fieldset>
+
+    <div class="circle01"></div>
+
 </body>
 
 </html>
