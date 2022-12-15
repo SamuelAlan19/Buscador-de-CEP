@@ -1,0 +1,47 @@
+.numb {
+    margin-top: 5px;
+}
+
+.box01 {
+    display: flex;
+    justify-content: center;
+}
+
+.res01 {
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 940px;
+    margin-right: 940px;
+}
+
+.opr {
+    margin-top: 8px; 
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+--------------------------------------
+
+.num {
+    margin-top: 8px;
+}
+
+.button {
+    margin-top: 8px;
+}
+
+.box02 {
+    display: flex;
+    justify-content: center;
+}
+
+.res02 {
+    text-align: center;
+    border-style: dashed;
+    border-radius: 10px;
+    margin-left: 940px;
+    margin-right: 940px;
+}
