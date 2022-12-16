@@ -24,7 +24,7 @@
     <fieldset>
         <div class="div01">
             <form method="POST">
-                <label class="label01">Informe o CEP desejado: <input type="text" name="txtcep" class="cep" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="campo" maxlength="9"> </label><br>
+                <label class="label01">Informe o CEP desejado: <input type="text" name="txtcep" class="cep" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="campo" maxlength="8"> </label><br>
 
                 <label><input class="button" type="submit" name="btnBuscar" value="Buscar"> </label>
             </form>
@@ -49,12 +49,12 @@
 
             <?php
 
-            if (strlen($_POST["txtcep"]) <= 7) {
+            if (strlen($_POST["txtcep"]) <= 8) {
                 $endereco = '00000000';
                 echo "<script>alert('CEP INVÁLIDO')</script>";
             } else {
                 $endereco = filter_input(INPUT_POST, "txtcep");
-                echo "<script>alert('CEP ENCONTRADO COM SUCESSO')</script>";
+                // echo "<script>alert('CEP ENCONTRADO COM SUCESSO')</script>";
             }
 
 
