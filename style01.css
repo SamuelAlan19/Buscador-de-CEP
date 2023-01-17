@@ -66,7 +66,7 @@ h1::before {
 
 .div01 {
     border: 5px solid #555555;
-    box-shadow: 0px 10px 40px -12px #000000;
+    box-shadow: 0px 7px 7px 7px #000000;
     border-radius: 15px;
     background-color: black;
     color: white;
